@@ -1,0 +1,17 @@
+{
+  "name": "weatherapp-nodejs",
+  "version": "1.0.0",
+  "description": "WeatherApp_Using_Nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rahul Gaur",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "require": "^2.4.20"
+  }
+}
