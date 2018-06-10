@@ -2,6 +2,9 @@ const express = require('express');
 const hbs = require('hbs');
 const fs =require('fs');
 
+//so the port will grab the port by using process.env which is object contains all
+//all the information regarding our all the environments
+const port = process.env.PORT || 3000;
 let app = express();
 
 hbs.registerPartials(__dirname+'/views/partials');
@@ -54,6 +57,6 @@ app.get('/bad',(req,res)=>{
     });
 });
 
-app.listen(3000,()=>{
-   console.log('Server is up and running at port 3000');
+app.listen(port,()=>{
+   console.log(`Server is up and running at port ${port}`);
 });
